@@ -1,12 +1,59 @@
-﻿<html xmlns="http://www.w3.org/1999/xhtml">
+﻿<!DOCTYPE html>
+<html>
 <head>
-    <title>@ViewBag.Title</title>
+    <title></title>
+    
+    <style>
+        .myNavbar {
+            background-color: blue;
+            margin-bottom: 30px;
+            height: 52px;
+        }
+
+        .myNavbarContent {
+            background-color: aqua;
+            width: 75%;
+            margin: auto;
+            height: 52px;
+        }
+    </style>
 </head>
 <body>
-    @Html.ActionLink("Home","Index","Home")
-    @Html.ActionLink("About","About","Home",new { }, new { })
-    <div>
-        @RenderBody()
+    <div class="myNavbar">
+        <div class="myNavbarContent">
+            @Html.ActionLink("Home","Index","Home",new { }, new { } )
+            @Html.ActionLink("About", "About", "Home", new { }, new {  })
+            @Html.ActionLink("Contact", "", "", new { }, new {  })
+
+            @if (User.Identity.IsAuthenticated)
+            {
+
+                if (User.IsInRole("admin"))
+                {
+                    @Html.ActionLink("UploadBook", "UploadFiles", "Book", new {}, new {})
+                }
+
+                if (User.IsInRole("user"))
+                {
+                    @Html.ActionLink("Charge Your Account", "Index", "Cont", new { }, new { })
+                    @Html.ActionLink("Achizitii", "Index", "Achizitie", new { }, new { })
+                }
+            }
+            <div style="float: right">
+            @if (User.Identity.IsAuthenticated)
+            {
+                @Html.ActionLink("Logout", "Logout", "Auth", new { }, new { })
+            }
+            else
+            {
+                @Html.ActionLink("Login", "Login", "Auth", new { }, new {  })
+                @Html.ActionLink("Registration", "Registration", "Auth", new { }, new { })
+            }
+            </div>
+        </div>
     </div>
+
+    @RenderBody()
+
 </body>
 </html>

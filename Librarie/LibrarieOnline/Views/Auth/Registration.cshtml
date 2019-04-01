@@ -1,0 +1,21 @@
+﻿@model LibrarieOnline.Model.User
+
+
+@using (Html.BeginForm())
+{
+
+    @Html.TextBoxFor(u => u.UserName) <br><br>
+    @Html.TextBoxFor(u => u.Password) <br> <br>
+    @Html.DropDownListFor(u => u.RoleId, new List<SelectListItem>() {
+        new SelectListItem(){
+            Text = "user", Value = "2"
+        },
+
+    new SelectListItem(){
+            Text = "admin" , Value = "1"
+        }
+    })
+
+    <p><input type="submit" value="Register" /></p>
+
+}

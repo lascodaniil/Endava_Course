@@ -1,80 +1,167 @@
-D:\Endava_Course\Librarie\LibrarieOnline\bin\LibrarieOnline.dll.config
-D:\Endava_Course\Librarie\LibrarieOnline\bin\LibrarieOnline.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\LibrarieOnline.pdb
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\csc.exe
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\csc.exe.config
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\csc.rsp
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\csi.exe
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\csi.exe.config
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\csi.rsp
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\Microsoft.CodeAnalysis.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\Microsoft.CSharp.Core.targets
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\Microsoft.Managed.Core.targets
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\Microsoft.VisualBasic.Core.targets
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\System.AppContext.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\System.Collections.Immutable.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\System.Console.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\System.Diagnostics.StackTrace.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\System.IO.Compression.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\System.IO.FileSystem.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\System.IO.FileSystem.Primitives.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\System.IO.Pipes.AccessControl.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\System.IO.Pipes.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\System.Reflection.Metadata.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\System.Security.AccessControl.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\System.Security.Claims.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\System.Security.Cryptography.Encoding.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\System.Security.Cryptography.Primitives.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\System.Security.Principal.Windows.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\System.Text.Encoding.CodePages.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\System.ValueTuple.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\System.Xml.ReaderWriter.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\System.Xml.XmlDocument.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\System.Xml.XPath.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\System.Xml.XPath.XDocument.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\vbc.exe
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\vbc.exe.config
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\vbc.rsp
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\VBCSCompiler.exe
-D:\Endava_Course\Librarie\LibrarieOnline\bin\roslyn\VBCSCompiler.exe.config
-D:\Endava_Course\Librarie\LibrarieOnline\bin\Antlr3.Runtime.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\Microsoft.AspNet.TelemetryCorrelation.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\Microsoft.Web.Infrastructure.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\Newtonsoft.Json.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\System.Diagnostics.DiagnosticSource.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\System.Web.Helpers.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\System.Web.Mvc.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\System.Web.Optimization.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\System.Web.Razor.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\System.Web.WebPages.Deployment.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\System.Web.WebPages.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\System.Web.WebPages.Razor.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\WebGrease.dll
-D:\Endava_Course\Librarie\LibrarieOnline\bin\System.Web.Helpers.xml
-D:\Endava_Course\Librarie\LibrarieOnline\bin\System.Web.Mvc.xml
-D:\Endava_Course\Librarie\LibrarieOnline\bin\System.Web.Optimization.xml
-D:\Endava_Course\Librarie\LibrarieOnline\bin\System.Web.Razor.xml
-D:\Endava_Course\Librarie\LibrarieOnline\bin\System.Web.WebPages.xml
-D:\Endava_Course\Librarie\LibrarieOnline\bin\System.Web.WebPages.Deployment.xml
-D:\Endava_Course\Librarie\LibrarieOnline\bin\System.Web.WebPages.Razor.xml
-D:\Endava_Course\Librarie\LibrarieOnline\bin\Newtonsoft.Json.xml
-D:\Endava_Course\Librarie\LibrarieOnline\bin\Antlr3.Runtime.pdb
-D:\Endava_Course\Librarie\LibrarieOnline\bin\System.Diagnostics.DiagnosticSource.xml
-D:\Endava_Course\Librarie\LibrarieOnline\bin\Microsoft.AspNet.TelemetryCorrelation.xml
-D:\Endava_Course\Librarie\LibrarieOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\Endava_Course\Librarie\LibrarieOnline\obj\Debug\LibrarieOnline.csprojAssemblyReference.cache
-D:\Endava_Course\Librarie\LibrarieOnline\obj\Debug\LibrarieOnline.csproj.CoreCompileInputs.cache
-D:\Endava_Course\Librarie\LibrarieOnline\obj\Debug\LibrarieOnline.csproj.CopyComplete
-D:\Endava_Course\Librarie\LibrarieOnline\obj\Debug\LibrarieOnline.dll
-D:\Endava_Course\Librarie\LibrarieOnline\obj\Debug\LibrarieOnline.pdb
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\LibrarieOnline.dll.config
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\LibrarieOnline.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\LibrarieOnline.pdb
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\csc.exe
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\csc.exe.config
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\csc.rsp
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\csi.exe
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\csi.exe.config
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\csi.rsp
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\System.AppContext.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\System.Console.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\System.IO.Compression.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\System.IO.Pipes.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\System.Security.Claims.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\System.ValueTuple.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\System.Xml.XPath.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\vbc.exe
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\vbc.exe.config
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\vbc.rsp
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\VBCSCompiler.exe
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\Antlr3.Runtime.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\Newtonsoft.Json.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\System.Web.Helpers.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\System.Web.Mvc.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\System.Web.Optimization.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\System.Web.Razor.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\System.Web.WebPages.Deployment.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\System.Web.WebPages.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\System.Web.WebPages.Razor.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\WebGrease.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\System.Web.Helpers.xml
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\System.Web.Mvc.xml
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\System.Web.Optimization.xml
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\System.Web.Razor.xml
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\System.Web.WebPages.xml
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\System.Web.WebPages.Deployment.xml
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\System.Web.WebPages.Razor.xml
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\Newtonsoft.Json.xml
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\Antlr3.Runtime.pdb
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\obj\Debug\LibrarieOnline.csproj.CoreCompileInputs.cache
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\obj\Debug\LibrarieOnline.csproj.CopyComplete
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\obj\Debug\LibrarieOnline.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\obj\Debug\LibrarieOnline.pdb
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\EntityFramework.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\EntityFramework.xml
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\EntityFramework.SqlServer.dll
+C:\Users\vburca\OneDrive - ENDAVA\Desktop\Librarie\Librarie\LibrarieOnline\bin\EntityFramework.SqlServer.xml
+D:\Librarie\LibrarieOnline\bin\LibrarieOnline.dll.config
+D:\Librarie\LibrarieOnline\bin\LibrarieOnline.dll
+D:\Librarie\LibrarieOnline\bin\LibrarieOnline.pdb
+D:\Librarie\LibrarieOnline\bin\roslyn\csc.exe
+D:\Librarie\LibrarieOnline\bin\roslyn\csc.exe.config
+D:\Librarie\LibrarieOnline\bin\roslyn\csc.rsp
+D:\Librarie\LibrarieOnline\bin\roslyn\csi.exe
+D:\Librarie\LibrarieOnline\bin\roslyn\csi.exe.config
+D:\Librarie\LibrarieOnline\bin\roslyn\csi.rsp
+D:\Librarie\LibrarieOnline\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Librarie\LibrarieOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Librarie\LibrarieOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Librarie\LibrarieOnline\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Librarie\LibrarieOnline\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Librarie\LibrarieOnline\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Librarie\LibrarieOnline\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Librarie\LibrarieOnline\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Librarie\LibrarieOnline\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Librarie\LibrarieOnline\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Librarie\LibrarieOnline\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Librarie\LibrarieOnline\bin\roslyn\System.AppContext.dll
+D:\Librarie\LibrarieOnline\bin\roslyn\System.Collections.Immutable.dll
+D:\Librarie\LibrarieOnline\bin\roslyn\System.Console.dll
+D:\Librarie\LibrarieOnline\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Librarie\LibrarieOnline\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Librarie\LibrarieOnline\bin\roslyn\System.IO.Compression.dll
+D:\Librarie\LibrarieOnline\bin\roslyn\System.IO.FileSystem.dll
+D:\Librarie\LibrarieOnline\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Librarie\LibrarieOnline\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\Librarie\LibrarieOnline\bin\roslyn\System.IO.Pipes.dll
+D:\Librarie\LibrarieOnline\bin\roslyn\System.Reflection.Metadata.dll
+D:\Librarie\LibrarieOnline\bin\roslyn\System.Security.AccessControl.dll
+D:\Librarie\LibrarieOnline\bin\roslyn\System.Security.Claims.dll
+D:\Librarie\LibrarieOnline\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Librarie\LibrarieOnline\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Librarie\LibrarieOnline\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Librarie\LibrarieOnline\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Librarie\LibrarieOnline\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Librarie\LibrarieOnline\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Librarie\LibrarieOnline\bin\roslyn\System.ValueTuple.dll
+D:\Librarie\LibrarieOnline\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Librarie\LibrarieOnline\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Librarie\LibrarieOnline\bin\roslyn\System.Xml.XPath.dll
+D:\Librarie\LibrarieOnline\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Librarie\LibrarieOnline\bin\roslyn\vbc.exe
+D:\Librarie\LibrarieOnline\bin\roslyn\vbc.exe.config
+D:\Librarie\LibrarieOnline\bin\roslyn\vbc.rsp
+D:\Librarie\LibrarieOnline\bin\roslyn\VBCSCompiler.exe
+D:\Librarie\LibrarieOnline\bin\roslyn\VBCSCompiler.exe.config
+D:\Librarie\LibrarieOnline\bin\Antlr3.Runtime.dll
+D:\Librarie\LibrarieOnline\bin\EntityFramework.SqlServer.dll
+D:\Librarie\LibrarieOnline\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\Librarie\LibrarieOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Librarie\LibrarieOnline\bin\Microsoft.Web.Infrastructure.dll
+D:\Librarie\LibrarieOnline\bin\Newtonsoft.Json.dll
+D:\Librarie\LibrarieOnline\bin\System.Diagnostics.DiagnosticSource.dll
+D:\Librarie\LibrarieOnline\bin\System.Web.Helpers.dll
+D:\Librarie\LibrarieOnline\bin\System.Web.Mvc.dll
+D:\Librarie\LibrarieOnline\bin\System.Web.Optimization.dll
+D:\Librarie\LibrarieOnline\bin\System.Web.Razor.dll
+D:\Librarie\LibrarieOnline\bin\System.Web.WebPages.Deployment.dll
+D:\Librarie\LibrarieOnline\bin\System.Web.WebPages.dll
+D:\Librarie\LibrarieOnline\bin\System.Web.WebPages.Razor.dll
+D:\Librarie\LibrarieOnline\bin\WebGrease.dll
+D:\Librarie\LibrarieOnline\bin\EntityFramework.dll
+D:\Librarie\LibrarieOnline\bin\EntityFramework.SqlServer.xml
+D:\Librarie\LibrarieOnline\bin\System.Web.Helpers.xml
+D:\Librarie\LibrarieOnline\bin\System.Web.Mvc.xml
+D:\Librarie\LibrarieOnline\bin\System.Web.Optimization.xml
+D:\Librarie\LibrarieOnline\bin\System.Web.Razor.xml
+D:\Librarie\LibrarieOnline\bin\System.Web.WebPages.xml
+D:\Librarie\LibrarieOnline\bin\System.Web.WebPages.Deployment.xml
+D:\Librarie\LibrarieOnline\bin\System.Web.WebPages.Razor.xml
+D:\Librarie\LibrarieOnline\bin\Newtonsoft.Json.xml
+D:\Librarie\LibrarieOnline\bin\Antlr3.Runtime.pdb
+D:\Librarie\LibrarieOnline\bin\System.Diagnostics.DiagnosticSource.xml
+D:\Librarie\LibrarieOnline\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\Librarie\LibrarieOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Librarie\LibrarieOnline\bin\EntityFramework.xml
+D:\Librarie\LibrarieOnline\obj\Debug\LibrarieOnline.csproj.CoreCompileInputs.cache
+D:\Librarie\LibrarieOnline\obj\Debug\LibrarieOnline.csproj.CopyComplete
+D:\Librarie\LibrarieOnline\obj\Debug\LibrarieOnline.dll
+D:\Librarie\LibrarieOnline\obj\Debug\LibrarieOnline.pdb
+D:\Librarie\LibrarieOnline\obj\Debug\LibrarieOnline.csprojAssemblyReference.cache
