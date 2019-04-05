@@ -25,12 +25,12 @@ namespace LibrarieOnline.Model
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Author> Authors { get; set; }
-        public virtual DbSet<Book> Books { get; set; }
-        public virtual DbSet<Category> Categories { get; set; }
-        public virtual DbSet<Cont> Conts { get; set; }
-        public virtual DbSet<Publisher> Publishers { get; set; }
-        public virtual DbSet<Purchase> Purchases { get; set; }
+        public virtual DbSet<Author> Author { get; set; }
+        public virtual DbSet<Book> Book { get; set; }
+        public virtual DbSet<Category> Category { get; set; }
+        public virtual DbSet<Cont> Cont { get; set; }
+        public virtual DbSet<Publisher> Publisher { get; set; }
+        public virtual DbSet<Purchases> Purchases { get; set; }
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<UserRole> UserRoles { get; set; }
     }

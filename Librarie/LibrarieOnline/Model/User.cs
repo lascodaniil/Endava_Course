@@ -17,8 +17,8 @@ namespace LibrarieOnline.Model
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public User()
         {
-            this.Conts = new HashSet<Cont>();
-            this.Purchases = new HashSet<Purchase>();
+            this.Cont = new HashSet<Cont>();
+            this.Purchases = new HashSet<Purchases>();
         }
     
         public int UserId { get; set; }
@@ -27,9 +27,9 @@ namespace LibrarieOnline.Model
         public string Password { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Cont> Conts { get; set; }
+        public virtual ICollection<Cont> Cont { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Purchase> Purchases { get; set; }
+        public virtual ICollection<Purchases> Purchases { get; set; }
         public virtual UserRole UserRole { get; set; }
     }
 }

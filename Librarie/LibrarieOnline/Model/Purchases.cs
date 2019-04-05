@@ -12,7 +12,7 @@ namespace LibrarieOnline.Model
     using System;
     using System.Collections.Generic;
     
-    public partial class Purchase
+    public partial class Purchases
     {
         public int PurchasesId { get; set; }
         public int UserId { get; set; }

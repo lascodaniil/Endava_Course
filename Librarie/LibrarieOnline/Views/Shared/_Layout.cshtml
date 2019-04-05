@@ -21,34 +21,35 @@
 <body>
     <div class="myNavbar">
         <div class="myNavbarContent">
-            @Html.ActionLink("Home","Index","Home",new { }, new { } )
-            @Html.ActionLink("About", "About", "Home", new { }, new {  })
-            @Html.ActionLink("Contact", "", "", new { }, new {  })
+            @Html.ActionLink("Home", "Index", "Home", new { }, new { })
+            @Html.ActionLink("About", "About", "Home", new { }, new { })
+            @Html.ActionLink("Contact", "", "", new { }, new { })
 
             @if (User.Identity.IsAuthenticated)
             {
 
                 if (User.IsInRole("admin"))
                 {
-                    @Html.ActionLink("UploadBook", "UploadFiles", "Book", new {}, new {})
+                    @Html.ActionLink("UploadBook", "UploadFiles", "Book", new { }, new { })
                 }
 
                 if (User.IsInRole("user"))
                 {
                     @Html.ActionLink("Charge Your Account", "Index", "Cont", new { }, new { })
                     @Html.ActionLink("Achizitii", "Index", "Achizitie", new { }, new { })
+
                 }
             }
             <div style="float: right">
-            @if (User.Identity.IsAuthenticated)
-            {
-                @Html.ActionLink("Logout", "Logout", "Auth", new { }, new { })
-            }
-            else
-            {
-                @Html.ActionLink("Login", "Login", "Auth", new { }, new {  })
-                @Html.ActionLink("Registration", "Registration", "Auth", new { }, new { })
-            }
+                @if (User.Identity.IsAuthenticated)
+                {
+                    @Html.ActionLink("Logout", "Logout", "Auth", new { }, new { })
+                }
+                else
+                {
+                    @Html.ActionLink("Login", "Login", "Auth", new { }, new { })
+                    @Html.ActionLink("Registration", "Registration", "Auth", new { }, new { })
+                }
             </div>
         </div>
     </div>

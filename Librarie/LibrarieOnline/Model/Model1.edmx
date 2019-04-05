@@ -208,7 +208,7 @@
           </Key>
           <Property Name="AuthorId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="Books" Relationship="Self.FK__Book__AuthorId__4316F928" FromRole="Author" ToRole="Book" />
+          <NavigationProperty Name="Book" Relationship="Self.FK__Book__AuthorId__4316F928" FromRole="Author" ToRole="Book" />
         </EntityType>
         <EntityType Name="Book">
           <Key>
@@ -234,7 +234,7 @@
           </Key>
           <Property Name="CategoryId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="Books" Relationship="Self.FK__Book__CategoryId__4222D4EF" FromRole="Category" ToRole="Book" />
+          <NavigationProperty Name="Book" Relationship="Self.FK__Book__CategoryId__4222D4EF" FromRole="Category" ToRole="Book" />
         </EntityType>
         <EntityType Name="Cont">
           <Key>
@@ -251,9 +251,9 @@
           </Key>
           <Property Name="PublisherId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="Books" Relationship="Self.FK__Book__PublisherI__440B1D61" FromRole="Publisher" ToRole="Book" />
+          <NavigationProperty Name="Book" Relationship="Self.FK__Book__PublisherI__440B1D61" FromRole="Publisher" ToRole="Book" />
         </EntityType>
-        <EntityType Name="Purchase">
+        <EntityType Name="Purchases">
           <Key>
             <PropertyRef Name="PurchasesId" />
           </Key>
@@ -274,7 +274,7 @@
           <Property Name="UserName" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="RoleId" Type="Int32" Nullable="false" />
           <Property Name="Password" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="Conts" Relationship="Self.FK__Cont__UserId__4AB81AF0" FromRole="User" ToRole="Cont" />
+          <NavigationProperty Name="Cont" Relationship="Self.FK__Cont__UserId__4AB81AF0" FromRole="User" ToRole="Cont" />
           <NavigationProperty Name="Purchases" Relationship="Self.FK__Purchases__UserI__46E78A0C" FromRole="User" ToRole="Purchases" />
           <NavigationProperty Name="UserRole" Relationship="Self.FK__User__RoleId__3F466844" FromRole="User" ToRole="UserRole" />
         </EntityType>
@@ -284,7 +284,7 @@
           </Key>
           <Property Name="RoleId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Role" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="Users" Relationship="Self.FK__User__RoleId__3F466844" FromRole="UserRole" ToRole="User" />
+          <NavigationProperty Name="User" Relationship="Self.FK__User__RoleId__3F466844" FromRole="UserRole" ToRole="User" />
         </EntityType>
         <Association Name="FK__Book__AuthorId__4316F928">
           <End Role="Author" Type="Self.Author" Multiplicity="1" />
@@ -324,7 +324,7 @@
         </Association>
         <Association Name="FK__Purchases__BookI__47DBAE45">
           <End Role="Book" Type="Self.Book" Multiplicity="1" />
-          <End Role="Purchases" Type="Self.Purchase" Multiplicity="*" />
+          <End Role="Purchases" Type="Self.Purchases" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Book">
               <PropertyRef Name="BookId" />
@@ -348,7 +348,7 @@
         </Association>
         <Association Name="FK__Purchases__UserI__46E78A0C">
           <End Role="User" Type="Self.User" Multiplicity="1" />
-          <End Role="Purchases" Type="Self.Purchase" Multiplicity="*" />
+          <End Role="Purchases" Type="Self.Purchases" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="User">
               <PropertyRef Name="UserId" />
@@ -371,41 +371,41 @@
           </ReferentialConstraint>
         </Association>
         <EntityContainer Name="LibrarieEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="Authors" EntityType="Self.Author" />
-          <EntitySet Name="Books" EntityType="Self.Book" />
-          <EntitySet Name="Categories" EntityType="Self.Category" />
-          <EntitySet Name="Conts" EntityType="Self.Cont" />
-          <EntitySet Name="Publishers" EntityType="Self.Publisher" />
-          <EntitySet Name="Purchases" EntityType="Self.Purchase" />
-          <EntitySet Name="Users" EntityType="Self.User" />
-          <EntitySet Name="UserRoles" EntityType="Self.UserRole" />
+          <EntitySet Name="Author" EntityType="Self.Author" />
+          <EntitySet Name="Book" EntityType="Self.Book" />
+          <EntitySet Name="Category" EntityType="Self.Category" />
+          <EntitySet Name="Cont" EntityType="Self.Cont" />
+          <EntitySet Name="Publisher" EntityType="Self.Publisher" />
+          <EntitySet Name="Purchases" EntityType="Self.Purchases" />
+          <EntitySet Name="User" EntityType="Self.User" />
+          <EntitySet Name="UserRole" EntityType="Self.UserRole" />
           <AssociationSet Name="FK__Book__AuthorId__4316F928" Association="Self.FK__Book__AuthorId__4316F928">
-            <End Role="Author" EntitySet="Authors" />
-            <End Role="Book" EntitySet="Books" />
+            <End Role="Author" EntitySet="Author" />
+            <End Role="Book" EntitySet="Book" />
           </AssociationSet>
           <AssociationSet Name="FK__Book__CategoryId__4222D4EF" Association="Self.FK__Book__CategoryId__4222D4EF">
-            <End Role="Category" EntitySet="Categories" />
-            <End Role="Book" EntitySet="Books" />
+            <End Role="Category" EntitySet="Category" />
+            <End Role="Book" EntitySet="Book" />
           </AssociationSet>
           <AssociationSet Name="FK__Book__PublisherI__440B1D61" Association="Self.FK__Book__PublisherI__440B1D61">
-            <End Role="Publisher" EntitySet="Publishers" />
-            <End Role="Book" EntitySet="Books" />
+            <End Role="Publisher" EntitySet="Publisher" />
+            <End Role="Book" EntitySet="Book" />
           </AssociationSet>
           <AssociationSet Name="FK__Purchases__BookI__47DBAE45" Association="Self.FK__Purchases__BookI__47DBAE45">
-            <End Role="Book" EntitySet="Books" />
+            <End Role="Book" EntitySet="Book" />
             <End Role="Purchases" EntitySet="Purchases" />
           </AssociationSet>
           <AssociationSet Name="FK__Cont__UserId__4AB81AF0" Association="Self.FK__Cont__UserId__4AB81AF0">
-            <End Role="User" EntitySet="Users" />
-            <End Role="Cont" EntitySet="Conts" />
+            <End Role="User" EntitySet="User" />
+            <End Role="Cont" EntitySet="Cont" />
           </AssociationSet>
           <AssociationSet Name="FK__Purchases__UserI__46E78A0C" Association="Self.FK__Purchases__UserI__46E78A0C">
-            <End Role="User" EntitySet="Users" />
+            <End Role="User" EntitySet="User" />
             <End Role="Purchases" EntitySet="Purchases" />
           </AssociationSet>
           <AssociationSet Name="FK__User__RoleId__3F466844" Association="Self.FK__User__RoleId__3F466844">
-            <End Role="UserRole" EntitySet="UserRoles" />
-            <End Role="User" EntitySet="Users" />
+            <End Role="UserRole" EntitySet="UserRole" />
+            <End Role="User" EntitySet="User" />
           </AssociationSet>
         </EntityContainer>
       </Schema>
@@ -414,7 +414,7 @@
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="LibrarieModelStoreContainer" CdmEntityContainer="LibrarieEntities">
-          <EntitySetMapping Name="Authors">
+          <EntitySetMapping Name="Author">
             <EntityTypeMapping TypeName="LibrarieModel.Author">
               <MappingFragment StoreEntitySet="Author">
                 <ScalarProperty Name="AuthorId" ColumnName="AuthorId" />
@@ -422,7 +422,7 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="Books">
+          <EntitySetMapping Name="Book">
             <EntityTypeMapping TypeName="LibrarieModel.Book">
               <MappingFragment StoreEntitySet="Book">
                 <ScalarProperty Name="BookId" ColumnName="BookId" />
@@ -437,7 +437,7 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="Categories">
+          <EntitySetMapping Name="Category">
             <EntityTypeMapping TypeName="LibrarieModel.Category">
               <MappingFragment StoreEntitySet="Category">
                 <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
@@ -445,7 +445,7 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="Conts">
+          <EntitySetMapping Name="Cont">
             <EntityTypeMapping TypeName="LibrarieModel.Cont">
               <MappingFragment StoreEntitySet="Cont">
                 <ScalarProperty Name="ContId" ColumnName="ContId" />
@@ -454,7 +454,7 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="Publishers">
+          <EntitySetMapping Name="Publisher">
             <EntityTypeMapping TypeName="LibrarieModel.Publisher">
               <MappingFragment StoreEntitySet="Publisher">
                 <ScalarProperty Name="PublisherId" ColumnName="PublisherId" />
@@ -463,7 +463,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Purchases">
-            <EntityTypeMapping TypeName="LibrarieModel.Purchase">
+            <EntityTypeMapping TypeName="LibrarieModel.Purchases">
               <MappingFragment StoreEntitySet="Purchases">
                 <ScalarProperty Name="PurchasesId" ColumnName="PurchasesId" />
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
@@ -474,7 +474,7 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="Users">
+          <EntitySetMapping Name="User">
             <EntityTypeMapping TypeName="LibrarieModel.User">
               <MappingFragment StoreEntitySet="User">
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
@@ -484,7 +484,7 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="UserRoles">
+          <EntitySetMapping Name="UserRole">
             <EntityTypeMapping TypeName="LibrarieModel.UserRole">
               <MappingFragment StoreEntitySet="UserRole">
                 <ScalarProperty Name="RoleId" ColumnName="RoleId" />
@@ -506,7 +506,7 @@
     <Options>
       <DesignerInfoPropertySet>
         <DesignerProperty Name="ValidateOnBuild" Value="true" />
-        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
         <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
         <DesignerProperty Name="UseLegacyProvider" Value="false" />
         <DesignerProperty Name="CodeGenerationStrategy" Value="None" />

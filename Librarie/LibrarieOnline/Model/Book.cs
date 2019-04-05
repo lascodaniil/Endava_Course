@@ -17,7 +17,7 @@ namespace LibrarieOnline.Model
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Book()
         {
-            this.Purchases = new HashSet<Purchase>();
+            this.Purchases = new HashSet<Purchases>();
         }
     
         public int BookId { get; set; }
@@ -34,6 +34,6 @@ namespace LibrarieOnline.Model
         public virtual Category Category { get; set; }
         public virtual Publisher Publisher { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Purchase> Purchases { get; set; }
+        public virtual ICollection<Purchases> Purchases { get; set; }
     }
 }

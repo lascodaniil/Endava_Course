@@ -16,17 +16,18 @@ namespace LibrarieOnline.Controllers
         [HttpGet]
         public ActionResult Login()
         {
+
             return View();
         }
 
         [HttpPost]
         public ActionResult Login(User data)
         {
-            var check = DB.Users.FirstOrDefault(u => u.UserName.Equals(data.UserName));
             FormsAuthentication.SetAuthCookie(data.UserName, false);
+            var check = DB.Users.FirstOrDefault(u => u.UserName.Equals(data.UserName) && u.Password == data.Password);
             if (check!=null)
             {
-                return RedirectToAction("Index","Home");
+                return RedirectToAction("Index","Home",data);
             }
             
             return View();
@@ -62,8 +63,6 @@ namespace LibrarieOnline.Controllers
             return RedirectToAction("Login", "Auth");
             
         }
-
-        
     }
 }
 

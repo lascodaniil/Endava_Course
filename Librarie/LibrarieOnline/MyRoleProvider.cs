@@ -21,7 +21,7 @@ namespace LibrarieOnline
 
             string[] raspuns = { result };
 
-            return raspuns;
+            return  raspuns;
         }
 
 

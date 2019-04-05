@@ -17,13 +17,13 @@ namespace LibrarieOnline.Model
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Author()
         {
-            this.Books = new HashSet<Book>();
+            this.Book = new HashSet<Book>();
         }
     
         public int AuthorId { get; set; }
         public string Name { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Book> Books { get; set; }
+        public virtual ICollection<Book> Book { get; set; }
     }
 }
