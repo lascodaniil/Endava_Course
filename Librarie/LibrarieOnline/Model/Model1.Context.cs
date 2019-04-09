@@ -16,7 +16,7 @@ namespace LibrarieOnline.Model
     public partial class LibrarieEntities : DbContext
     {
         public LibrarieEntities()
-            : base("name=LibrarieEntities")
+            : base("name=LibrarieEntities1")
         {
         }
     
@@ -31,7 +31,7 @@ namespace LibrarieOnline.Model
         public virtual DbSet<Cont> Cont { get; set; }
         public virtual DbSet<Publisher> Publisher { get; set; }
         public virtual DbSet<Purchases> Purchases { get; set; }
-        public virtual DbSet<User> Users { get; set; }
-        public virtual DbSet<UserRole> UserRoles { get; set; }
+        public virtual DbSet<User> User { get; set; }
+        public virtual DbSet<UserRole> UserRole { get; set; }
     }
 }

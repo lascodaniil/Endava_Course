@@ -168,7 +168,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="LibrarieEntities" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="LibrarieEntities1" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Author" EntityType="Self.Author" />
     <EntitySet Name="Book" EntityType="Self.Book" />
     <EntitySet Name="Category" EntityType="Self.Category" />

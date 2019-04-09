@@ -15,8 +15,8 @@ namespace LibrarieOnline
         {
             LibrarieEntities dbContext = new LibrarieEntities();
 
-            User user = dbContext.Users.FirstOrDefault(x => x.UserName == username);
-            var role = dbContext.UserRoles.FirstOrDefault(x => x.RoleId == user.RoleId);
+            User user = dbContext.User.FirstOrDefault(x => x.UserName == username);
+            var role = dbContext.UserRole.FirstOrDefault(x => x.RoleId == user.RoleId);
             string result = role.Role;
 
             string[] raspuns = { result };

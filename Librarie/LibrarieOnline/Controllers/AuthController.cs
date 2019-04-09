@@ -26,7 +26,7 @@ namespace LibrarieOnline.Controllers
         public ActionResult Login(User data)
         {
             FormsAuthentication.SetAuthCookie(data.UserName, false);
-            var check = DB.Users.FirstOrDefault(u => u.UserName.Equals(data.UserName) && u.Password == data.Password);
+            var check = DB.User.FirstOrDefault(u => u.UserName.Equals(data.UserName) && u.Password == data.Password);
             if (check!=null)
             {
                 return RedirectToAction("Index","Home",data);
@@ -48,7 +48,7 @@ namespace LibrarieOnline.Controllers
         public JsonResult GetRoles()
         {
             List<UserRole> result = new List<UserRole>();
-            List<UserRole> toateRolurileExtraseDinDB = DB.UserRoles.ToList();
+            List<UserRole> toateRolurileExtraseDinDB = DB.UserRole.ToList();
             foreach (UserRole role in toateRolurileExtraseDinDB)
             {
                 result.Add(new UserRole()
@@ -69,7 +69,7 @@ namespace LibrarieOnline.Controllers
             obj.Password = data.Password;
             obj.RoleId = data.RoleId;
 
-            DB.Users.Add(obj);
+            DB.User.Add(obj);
             DB.SaveChanges();
 
             return View();
