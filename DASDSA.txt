@@ -1,0 +1,55 @@
+USE [Librarie]
+GO
+
+CREATE TABLE [dbo].[Category](
+     [CategoryId] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY,
+     [Name] [varchar](250) NOT NULL
+ ) 
+ CREATE TABLE [dbo].[Author](
+     [AuthorId] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY,
+     [Name] [varchar](250) NOT NULL
+ ) 
+CREATE TABLE [dbo].[Publisher](
+     [PublisherId] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY,
+     [Name] [varchar](250) NOT NULL
+ ) 
+
+
+CREATE TABLE [dbo].[UserRole](
+     [RoleId] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY,
+     [Role] [varchar](250) NOT NULL
+ ) 
+CREATE TABLE [dbo].[User](
+     [UserId] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY,
+     [UserName] [varchar](250) NOT NULL,
+     [RoleId] [int] NOT NULL FOREIGN KEY REFERENCES [UserRole]([RoleId]),
+     [Password] [varchar](250) NOT NULL,
+ ) 
+
+ 
+ CREATE TABLE [dbo].[Book](
+     [BookId] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY,
+     [Title] [varchar](250) NOT NULL,
+	 [Price] [float] NOT NULL,
+     [CategoryId] [int] NOT NULL FOREIGN KEY REFERENCES [Category]([CategoryId]),
+     [AuthorId] [int] NOT NULL FOREIGN KEY REFERENCES [Author]([AuthorId]),
+     [PublisherId] [int] NOT NULL FOREIGN KEY REFERENCES [Publisher]([PublisherId]),
+     [Description] [varchar](250) NOT NULL,
+	 [DateWhenWasAdded] [datetime] NOT NULL,
+     [Image] [image] NULL
+ ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+ CREATE TABLE [dbo].[Purchases](
+	 [PurchasesId] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY,
+	 [UserId] [int] NOT NULL  FOREIGN KEY REFERENCES [User]([UserId]),
+     [BookId] [int] NOT NULL FOREIGN KEY REFERENCES [Book]([BookId]),
+	 [Date] [datetime] NOT NULL,
+	 [Price] [float] NOT NULL,
+	 [Description] [varchar](250) NOT NULL
+ ) 
+
+ CREATE TABLE [dbo].[Cont](
+	 [ContId] [int] IDENTITY(1,1) NOT NULL PRIMARY KEY,
+	 [UserId] [int] NOT NULL  FOREIGN KEY REFERENCES [User]([UserId]),
+	 [Amount] [float] NOT NULL,
+ )S
