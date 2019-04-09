@@ -2,6 +2,8 @@
 using System.Linq;
 using LibrarieOnline.Model;
 using System.Web.Security;
+using System.Collections.Generic;
+using System.Web;
 
 namespace LibrarieOnline.Controllers
 {
@@ -39,7 +41,25 @@ namespace LibrarieOnline.Controllers
         {
             return View();
         }
+        
 
+        [HttpPost]
+        [AllowAnonymous]
+        public JsonResult GetRoles()
+        {
+            List<UserRole> result = new List<UserRole>();
+            List<UserRole> toateRolurileExtraseDinDB = DB.UserRoles.ToList();
+            foreach (UserRole role in toateRolurileExtraseDinDB)
+            {
+                result.Add(new UserRole()
+                {
+                    Role = role.Role,
+                    RoleId = role.RoleId
+                });
+            }
+
+            return Json(result, JsonRequestBehavior.AllowGet);
+        }
 
         [HttpPost]
         public ActionResult Registration(User data)
