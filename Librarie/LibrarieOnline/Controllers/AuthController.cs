@@ -18,7 +18,6 @@ namespace LibrarieOnline.Controllers
         [HttpGet]
         public ActionResult Login()
         {
-
             return View();
         }
 
@@ -42,7 +41,6 @@ namespace LibrarieOnline.Controllers
             return View();
         }
         
-
         [HttpPost]
         [AllowAnonymous]
         public JsonResult GetRoles()
