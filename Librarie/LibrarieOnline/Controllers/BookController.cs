@@ -1,7 +1,9 @@
 ﻿using LibrarieOnline.Model;
 using LibrarieOnline.Model.DTO;
 using System;
+using System.IO;
 using System.Linq;
+using System.Web;
 using System.Web.Mvc;
 
 
@@ -27,21 +29,44 @@ namespace LibrarieOnline.Controllers
         }
 
         [HttpPost]
-        public ActionResult UploadFiles(BookViewModel book)
+        [Authorize(Roles = "admin")]
+        public ActionResult UploadFiless()
         {
-            Book n_book = new Book();
-            n_book.AuthorId = book.AuthorId;
-            n_book.CategoryId = book.CategoryId;
-            n_book.DateWhenWasAdded = DateTime.Now;
-            n_book.Description = "hgfds";
-            n_book.Price = book.Price;
-            n_book.PublisherId = book.PublisherId;
-            n_book.Title = book.Title;
+            HttpFileCollectionBase files = Request.Files;
+            HttpPostedFileBase file = files[0];
+            BinaryReader binaryReader = new BinaryReader(file.InputStream);
+            byte[] imageInBinaryFormat = binaryReader.ReadBytes(file.ContentLength);
 
-            DB.Book.Add(n_book);
-            DB.SaveChanges();
+            try
+            {
+                Book book = DB.Book.Create();
 
-            return RedirectToAction("Index", "Home");
+                book.Title = Request.Form["Title"];
+                book.Price = Convert.ToDouble(Request.Form["Price"]);
+                book.CategoryId = Convert.ToInt32(Request.Form["DropDownCategoryId"]);
+                book.AuthorId = Convert.ToInt32(Request.Form["DropDownAuthorId"]);
+                book.PublisherId = Convert.ToInt32(Request.Form["DropDownPublisherId"]);
+                book.Description = Request.Form["Description"];
+                book.Image = imageInBinaryFormat;
+                book.DateWhenWasAdded = DateTime.Now;
+
+                DB.Book.Add(book);
+                DB.SaveChanges();
+
+            }
+            catch (Exception e)
+            {
+                return Json(e.Message, JsonRequestBehavior.AllowGet);
+            }
+
+            return Json("Succes", JsonRequestBehavior.AllowGet);
+        }
+
+        public ActionResult GetBooks()
+        {
+            var Books = DB.Book.ToList();
+
+            return View(Books);
         }
     }
 }

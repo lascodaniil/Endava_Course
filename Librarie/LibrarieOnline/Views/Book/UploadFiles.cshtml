@@ -17,7 +17,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Title, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Title, new { htmlAttributes = new { @class = "form-control" } })
+                <input type="text" id="Title" class="form-control" />
                 @Html.ValidationMessageFor(model => model.Title, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -25,7 +25,8 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Price, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Price, new { htmlAttributes = new { @class = "form-control" } })
+                <input type="text" id="Price" class="form-control" />
+
                 @Html.ValidationMessageFor(model => model.Price, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -41,7 +42,7 @@
 
             @Html.LabelFor(model => model.CategoryId, "CategoryId", htmlAttributes: new { @class = "control-label col-md-2" })
             <br />
-            @Html.DropDownList("CategoryId", categories, htmlAttributes: new { @class = "form-control" })
+            @Html.DropDownList("CategoryDropDown", categories, htmlAttributes: new { @class = "form-control" })
             <br />
         </div>
 
@@ -56,7 +57,7 @@
 
             @Html.LabelFor(model => model.AuthorId, "AuthorId", htmlAttributes: new { @class = "control-label col-md-2" })
             <br />
-            @Html.DropDownList("AuthorID", author, htmlAttributes: new { @class = "form-control" })
+            @Html.DropDownList("AuthorDropDown", author, htmlAttributes: new { @class = "form-control" })
             <br />
         </div>
 
@@ -71,27 +72,30 @@
 
             @Html.LabelFor(model => model.PublisherId, "PublisherId", htmlAttributes: new { @class = "control-label col-md-2" })
             <br />
-            @Html.DropDownList("PublisherId", publisher, htmlAttributes: new { @class = "form-control" })
+            @Html.DropDownList("PublisherDropDown", publisher, htmlAttributes: new { @class = "form-control" })
             <br />
         </div>
 
-        @*<div class="col-md-10">
-            @Html.DropDownList("CategoryId", categories, htmlAttributes: new { @class = "form-control" }) 
-            <br />
-            @Html.LabelFor(model => model.book.AuthorId, "AuthorId", htmlAttributes: new { @class = "control-label col-md-2" })
-            <br />
-            @Html.DropDownList("AuthorID", author, htmlAttributes: new { @class = "form-control" })
-            <br />
-            @Html.LabelFor(model => model.book.PublisherId, "PublisherId", htmlAttributes: new { @class = "control-label col-md-2" })
-            <br />
-            @Html.DropDownList("PublisherId", publisher, htmlAttributes: new { @class = "form-control" })
-            <br />
-            @Html.ValidationMessageFor(model => model.book.CategoryId, "", new { @class = "text-danger" })
-        </div>*@
+        <div class="form-group">
+            @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <input type="text" id="Description" class="form-control" />
+                @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Image, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <input type="file" class="form-control" id="image">
+                @Html.ValidationMessageFor(model => model.Image, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Create" class="btn btn-default" />
+                <input type="submit" id="UploadBtn" value="Create" class="btn btn-default" />
             </div>
         </div>
     </div>
@@ -102,3 +106,31 @@
 </div>
 
 
+<script>
+        $('#UploadBtn').click(function () {           
+            var formData = new FormData();
+            formData.append($("#image").get(0).files[0].name, $("#image").get(0).files[0]);
+            formData.append("DropDownAuthorId", $('[name="AuthorDropDown"]').val());
+            formData.append("DropDownPublisherId", $('[name="PublisherDropDown"]').val());
+            formData.append("DropDownCategoryId", $('[name="CategoryDropDown"]').val());
+            formData.append("Title", $('#Title').val());
+            formData.append("Description", $('#Description').val());
+            formData.append("Price", $('#Price').val());
+
+            $.ajax({
+                url: '@Url.Action("UploadFiless", "Book")',
+                type: "POST",
+                contentType: false,
+                processData: false,
+                data: formData,
+                async: false,
+                success: function () {                    
+                    alert("succes");                    
+                },
+                error: function () {
+                    alert("ERROR");
+                }
+            });
+
+        });
+</script>

@@ -1,0 +1,32 @@
+﻿<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Price</th>
+                <th>Category</th>
+                <th>Author</th>
+                <th>Publisher</th>
+                <th>Description</th>
+                <th>Image</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var book in Model)
+            {
+                <tr>
+                    <td>@book.Title</td>
+                    <td>@book.Price</td>
+                    <td>@book.Category.Name</td>
+                    <td>@book.Author.Name</td>
+                    <td>@book.Publisher.Name</td>
+                    <td>@book.Description</td>
+                    <td>
+                        <img src="data:image;base64,@System.Convert.ToBase64String(book.Image)" height="100px"/>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

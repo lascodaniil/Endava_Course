@@ -3,11 +3,18 @@
 
 @using (Html.BeginForm())
 {
+    @Html.LabelFor(u => u.UserName) <span>:</span>
+    @Html.TextBoxFor(u => u.UserName)
 
-    @Html.TextBoxFor(u => u.UserName) <br><br>
-    @Html.TextBoxFor(u => u.Password) <br>
-    
-    <p><input type="submit" value="Log in"/></p>
+    <br />
+    <br />
+
+    @Html.LabelFor(u => u.Password) <span>:</span>
+    @Html.PasswordFor(u => u.Password)
+
+    <br />
+
+    <p><input type="submit" value="Log in" /></p>
 
 }
 
